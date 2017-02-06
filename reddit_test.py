@@ -7,7 +7,7 @@ import arrow
 
 reddit = praw.Reddit(client_id='3WQCPknt9uN63g',
                      client_secret='F6CVoE_M51YzugLqlT6VGqAh34g',
-                     password='bassem123',
+                     password='',
                      user_agent='testscript by /u/ybce',
                      username='ybce')
 
