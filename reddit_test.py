@@ -42,11 +42,11 @@ def unix_time(datetime):
 
 
 
-#Fetch submissions between certain time periods in UNIX time
+#Fetch submissions between certain time periods in UNIX time and certain keywords
 subreddit = reddit.subreddit('soccer')
 
 count = 0
-for submission in subreddit.submissions(1451606400,1451692800):
+for submission in subreddit.submissions(1451606400,1451692800, extra_query="title:'Messi'"):
     count += 1
     print str(count) + ": " + submission.title + ' ' + submission.shortlink + ' ('+ str(get_date(submission)) + ')'
 
